@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+body {
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    color: black;
+}
+#page-base {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "topo"
+    "body"
+    "foot";
+    grid-template-rows: 10% 1fr 10%;
+}
+#topo {
+    grid-area: topo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#body {
+    margin-top: 100px;
+    grid-area: body;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
