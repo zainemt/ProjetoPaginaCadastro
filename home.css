@@ -24,11 +24,31 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    border: 1px solid red;
 }
 #body {
-    margin-top: 100px;
+    padding: 10px;
     grid-area: body;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    border: 2px solid blue;
+}
+
+input {
+    border: 0px;
+    width: 100%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: white;
+}
+
+#Register {
+    display: flex;
+    align-items: center;
+    font-size: 12;
 }
